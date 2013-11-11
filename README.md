@@ -23,12 +23,19 @@ To get started right away.
   basedir =
   datadir =
   tmpdir =
-  
-  innodb_data_home_dir =
-  innodb_log_group_home_dir =
-  innodb_log_arch_dir =
-  
   ```
+  
+0. If you want to enable InnoDB support you should
+  0. comment out the line `skip-innodb` and uncomment all innodb settings
+  0. uncomment all the lines below `# Uncomment the following if you are using Innobase tables`
+  0. ensure especially the following paths are correct
+    
+    ```ini
+    innodb_data_home_dir =
+    innodb_log_group_home_dir =
+    innodb_log_arch_dir =
+    ```
+
 0. Run `install.bat` (as administrator) to install and start the service. The service name is `mysql_5_0_51b_portable`
 
 

@@ -1,5 +1,7 @@
-Ever wanted a portable mysql?
+Portable Mysql server
 =============================
+
+Ever wanted a portable mysql?
 
 You came to the right place. This is a stripped-down portable version of mysql 5.0.67. It is only 10.5 MB.
 

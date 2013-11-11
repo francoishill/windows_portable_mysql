@@ -5,26 +5,30 @@ You came to the right place. This is a stripped-down portable version of mysql 5
 
 Thanks to Uniform Server for the binaries on: http://sourceforge.net/projects/miniserver/files/MiniServer/MiniServer_%20MySQL%205.0.67%20Service/.
 
-# Quick Start
+# Quick Start (windows only)
 
-To get started right away. First obviously clone this repo. Open the my.cnf file and modify the following (**minimum**) values to fit your needs.
+To get started right away.
 
-```ini
-[client]
-port =
+0. Clone this repo.
+0. Open the my.cnf file and modify the following (**minimum**) values to fit your needs.
+  ```ini
+  [client]
+  port =
+  
+  [mysqld]
+  port =
+  
+  basedir =
+  datadir =
+  tmpdir =
+  
+  innodb_data_home_dir =
+  innodb_log_group_home_dir =
+  innodb_log_arch_dir =
+  
+  ```
+0. Run `install.bat` (as administrator) to install and start the service. The service name is `mysql_5_0_51b_portable`
 
-[mysqld]
-port =
-
-basedir =
-datadir =
-tmpdir =
-
-innodb_data_home_dir =
-innodb_log_group_home_dir =
-innodb_log_arch_dir =
-
-```
 
 # License
 

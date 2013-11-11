@@ -1,0 +1,7 @@
+Basically just ensure the following variables have the correct paths in my.cnf file:
+    - basedir
+    - datadir
+    - tmpdir
+    - innodb_data_home_dir
+    - innodb_log_group_home_dir
+    - innodb_log_arch_dir
